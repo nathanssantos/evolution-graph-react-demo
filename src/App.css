@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  margin: 0;
+  padding: 16px;
+  background-color: rgb(13, 17, 23);
+  color: rgb(206, 206, 206);
+}
+
+.evolution-graph {
+  font-family: Montserrat;
+}
+
+.evolution-graph__bar {
+  letter-spacing: 1.5px;
+}
+
+.evolution-graph__bar__track__fill {
+  border-radius: 4px;
+}
+
+.evolution-graph__title {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.evolution-graph__timeline__track__marker__label {
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin-left: -1px;
+}
+
+.evolution-graph__actions__bt {
+  height: 40px;
+  width: 40px;
+  border-radius: 4px;
+  border: none;
+  background: none;
+  transition: all 250ms ease-in-out;
+}
+
+.evolution-graph__actions__bt svg {
+  fill: rgb(206, 206, 206);
+}
+
+.evolution-graph__actions__bt:hover {
+  background: rgba(206, 206, 206, 0.2);
+}
