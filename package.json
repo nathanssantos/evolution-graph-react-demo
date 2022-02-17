@@ -1,32 +1,38 @@
 {
   "name": "evolution-graph-react-demo",
-  "version": "1.2.1",
+  "version": "1.2.10",
   "description": "Demo from the project evolution-graph - https://github.com/nathanssantos/evolution-graph.",
   "author": {
     "name": "Nathan Silva Santos",
     "email": "nathansilvasantos@gmail.com"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nathanssantos/evolution-graph-react-demo.git"
   },
-  "keywords": [
-    "graph",
-    "chart",
-    "evolution",
-    "animated",
-    "responsive",
-    "customizable",
-    "css",
-    "vanilla",
-    "js",
-    "javascript"
-  ],
   "bugs": {
     "url": "https://github.com/nathanssantos/evolution-graph-react-demo/issues"
   },
   "homepage": "https://nathanssantos.github.io/evolution-graph-react-demo",
-  "license": "MIT",
+  "keywords": [
+    "animated",
+    "chart",
+    "css",
+    "customizable",
+    "dependency-free",
+    "evolution",
+    "evolution-chart",
+    "evolution-graph",
+    "graph",
+    "javascript",
+    "js",
+    "react",
+    "responsive",
+    "vanilla",
+    "vanilla-javascript",
+    "vanilla-js"
+  ],
   "scripts": {
     "start": "vite",
     "build": "vite build --base=./",
@@ -35,7 +41,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "evolution-graph": "^1.2.1",
+    "evolution-graph": "^1.2.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },

@@ -533,10 +533,10 @@ estree-walker@^2.0.1:
   resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-2.0.2.tgz#52f010178c2a4c117a7757cfe942adb7d2da4cac"
   integrity sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==
 
-evolution-graph@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/evolution-graph/-/evolution-graph-1.2.1.tgz#797d30c999f7bfefa55523df18925d52e216b762"
-  integrity sha512-xxqEmNmf3x7Sqq8CI1ekZqOLzlmF1j1jGzw9jXScQhaWtMCW2/pML+tftm1wCG33a/+umOwG6VjhxcyJcIhV2g==
+evolution-graph@^1.2.10:
+  version "1.2.10"
+  resolved "https://registry.yarnpkg.com/evolution-graph/-/evolution-graph-1.2.10.tgz#fa60ecd829c832e4da18d63f01554bfe91655dbb"
+  integrity sha512-NA7/5dNwA1Nio7bV3y+2EyQ/IZB7uNrlSQYLabrAxPfIqxa6GFyugvovsXPjrjRMT0yRC0jyqb69Xgn5t4tT0A==
 
 filename-reserved-regex@^2.0.0:
   version "2.0.0"

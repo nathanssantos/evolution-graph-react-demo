@@ -113,38 +113,40 @@ const labels = [
 const App = () => {
   let graph = null;
 
-  // graph.setCurrentStep(3)
-  // graph.goToPreviousStep()
   // graph.goToNextStep()
-  // graph.play()
+  // graph.goToPreviousStep()
   // graph.pause()
+  // graph.play()
+  // graph.setCurrentStep(3)
 
   return (
     <div className="app">
       <EvolutionGraph
         data={data}
         labels={labels}
+        autoPlay={false}
+        barDataGap={4}
+        barLabelWidth={100}
+        barThickness={30}
+        barTransitionTopInterval={750}
         className="custom-evolution-graph"
+        gap={10}
         order="desc"
         stepInterval={1500}
-        transitionTopInterval={750}
-        gap={10}
-        barThickness={30}
-        barLabelWidth={100}
-        barDataGap={4}
-        timelineTrackThickness={4}
-        timelineTrackColor="rgb(206, 206, 206)"
-        timelineTrackFillColor="rgb(9, 132, 227)"
-        timelineMarkerSize={14}
-        timelineMarkerColor="rgb(206, 206, 206)"
         showActionButtons
-        autoPlay={false}
-        renderGraphTitle={(title) => `Date - ${title}`}
-        renderBarValue={(value) => `${value}k`}
-        onChange={(step) => {
-          console.log(step);
+        timelineTrackColor="#cecece"
+        timelineTrackFillColor="#0984e3"
+        timelineMarkerColor="#cecece"
+        timelineMarkerSize={14}
+        timelineTrackThickness={4}
+        getController={(controllerInstance) => {
+          graph = controllerInstance;
         }}
-        getController={(controllerInstance) => (graph = controllerInstance)}
+        onChange={(currentStep) => {
+          console.log(currentStep);
+        }}
+        renderBarValue={(value) => `${value}k`}
+        renderGraphTitle={(title) => `Date - ${title}`}
       />
     </div>
   );
