@@ -2,6 +2,8 @@ import React from "react";
 import EvolutionGraph from "evolution-graph";
 import "evolution-graph/src/css/styles.css";
 
+import generateSortedRandomNumbersArray from "./utils/generateSortedRandomNumbersArray";
+
 import "./App.css";
 
 const data = [
@@ -11,7 +13,10 @@ const data = [
     color: "#7F8B99",
     image:
       "https://raw.githubusercontent.com/abranhe/programming-languages-logos/30a0ecf99188be99a3c75a00efb5be61eca9c382/src/c/c.svg",
-    values: [0, 1, 3, 7, 14, 28, 32, 40, 42, 50, 60, 64],
+    values: [
+      0,
+      ...generateSortedRandomNumbersArray({ min: 0, max: 56, length: 23 }),
+    ],
   },
   {
     label: "C++",
@@ -19,7 +24,10 @@ const data = [
     color: "#1B598E",
     image:
       "https://raw.githubusercontent.com/abranhe/programming-languages-logos/30a0ecf99188be99a3c75a00efb5be61eca9c382/src/cpp/cpp.svg",
-    values: [0, 3, 12, 13, 14, 25, 33, 42, 42, 48, 64, 72],
+    values: [
+      0,
+      ...generateSortedRandomNumbersArray({ min: 0, max: 64, length: 23 }),
+    ],
   },
   {
     label: "C#",
@@ -27,7 +35,10 @@ const data = [
     color: "#9B4F96",
     image:
       "https://raw.githubusercontent.com/abranhe/programming-languages-logos/30a0ecf99188be99a3c75a00efb5be61eca9c382/src/csharp/csharp.svg",
-    values: [0, 2, 8, 9, 16, 20, 28, 50, 54, 56, 61, 86],
+    values: [
+      0,
+      ...generateSortedRandomNumbersArray({ min: 0, max: 108, length: 23 }),
+    ],
   },
   {
     label: "JavaScript",
@@ -35,7 +46,10 @@ const data = [
     color: "#F0DB4F",
     image:
       "https://raw.githubusercontent.com/abranhe/programming-languages-logos/30a0ecf99188be99a3c75a00efb5be61eca9c382/src/javascript/javascript.svg",
-    values: [0, 3, 9, 10, 22, 32, 40, 52, 64, 71, 80, 101],
+    values: [
+      0,
+      ...generateSortedRandomNumbersArray({ min: 0, max: 142, length: 23 }),
+    ],
   },
   {
     label: "Go",
@@ -43,7 +57,10 @@ const data = [
     color: "#2DBCAF",
     image:
       "https://raw.githubusercontent.com/abranhe/programming-languages-logos/30a0ecf99188be99a3c75a00efb5be61eca9c382/src/go/go.svg",
-    values: [0, 7, 15, 16, 18, 20, 26, 28, 36, 40, 42, 50],
+    values: [
+      0,
+      ...generateSortedRandomNumbersArray({ min: 0, max: 92, length: 23 }),
+    ],
   },
   {
     label: "Haskell",
@@ -51,7 +68,10 @@ const data = [
     color: "#5E5086",
     image:
       "https://raw.githubusercontent.com/abranhe/programming-languages-logos/30a0ecf99188be99a3c75a00efb5be61eca9c382/src/haskell/haskell.svg",
-    values: [0, 7, 10, 10, 10, 12, 14, 20, 20, 24, 28, 32],
+    values: [
+      0,
+      ...generateSortedRandomNumbersArray({ min: 0, max: 80, length: 23 }),
+    ],
   },
   {
     label: "Java",
@@ -59,7 +79,10 @@ const data = [
     color: "#E76F00",
     image:
       "https://raw.githubusercontent.com/abranhe/programming-languages-logos/30a0ecf99188be99a3c75a00efb5be61eca9c382/src/java/java.svg",
-    values: [0, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+    values: [
+      0,
+      ...generateSortedRandomNumbersArray({ min: 0, max: 50, length: 23 }),
+    ],
   },
   {
     label: "Kotlin",
@@ -67,7 +90,10 @@ const data = [
     color: "#F88909",
     image:
       "https://raw.githubusercontent.com/abranhe/programming-languages-logos/30a0ecf99188be99a3c75a00efb5be61eca9c382/src/kotlin/kotlin.svg",
-    values: [0, 8, 13, 14, 15, 18, 20, 21, 24, 26, 32, 34],
+    values: [
+      0,
+      ...generateSortedRandomNumbersArray({ min: 0, max: 66, length: 23 }),
+    ],
   },
   {
     label: "Php",
@@ -75,7 +101,10 @@ const data = [
     color: "#6181B6",
     image:
       "https://raw.githubusercontent.com/abranhe/programming-languages-logos/30a0ecf99188be99a3c75a00efb5be61eca9c382/src/php/php.svg",
-    values: [0, 4, 6, 11, 14, 15, 17, 17, 17, 20, 28, 30],
+    values: [
+      0,
+      ...generateSortedRandomNumbersArray({ min: 0, max: 101, length: 23 }),
+    ],
   },
   {
     label: "Python",
@@ -83,7 +112,10 @@ const data = [
     color: "#387EB8",
     image:
       "https://raw.githubusercontent.com/abranhe/programming-languages-logos/30a0ecf99188be99a3c75a00efb5be61eca9c382/src/python/python.svg",
-    values: [0, 1, 1, 2, 3, 3, 4, 7, 8, 11, 13, 15],
+    values: [
+      0,
+      ...generateSortedRandomNumbersArray({ min: 0, max: 128, length: 23 }),
+    ],
   },
   {
     label: "Ruby",
@@ -91,11 +123,26 @@ const data = [
     color: "#E82609",
     image:
       "https://raw.githubusercontent.com/abranhe/programming-languages-logos/30a0ecf99188be99a3c75a00efb5be61eca9c382/src/ruby/ruby.svg",
-    values: [0, 2, 4, 5, 6, 8, 10, 11, 14, 17, 20, 21],
+    values: [
+      0,
+      ...generateSortedRandomNumbersArray({ min: 0, max: 116, length: 23 }),
+    ],
   },
 ];
 
 const labels = [
+  "01/01/2020",
+  "01/02/2020",
+  "01/03/2020",
+  "01/04/2020",
+  "01/05/2020",
+  "01/06/2020",
+  "01/07/2020",
+  "01/08/2020",
+  "01/09/2020",
+  "01/10/2020",
+  "01/11/2020",
+  "01/12/2020",
   "01/01/2021",
   "01/02/2021",
   "01/03/2021",
